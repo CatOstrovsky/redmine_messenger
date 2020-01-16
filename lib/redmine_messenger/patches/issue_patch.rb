@@ -14,6 +14,7 @@ module RedmineMessenger
           channels = Messenger.channels_for_project project
           url = Messenger.url_for_project project
 
+          return unless RedmineMessenger.settings[:post_new_issue].to_i == 1
           return unless channels.present? && url
           return if is_private? && !Messenger.setting_for_project(project, :post_private_issues)
 

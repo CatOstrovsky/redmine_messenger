@@ -26,6 +26,7 @@ fr:
   label_messenger_wiki_updated: "[%{project_url}] Wiki %{url} mis à jour par *%{user}*"
   label_messenger: Messenger
   label_settings_auto_mentions: Convertir les noms en mentions
+  label_settings_post_new_issue: Avertir l'utilisateur lorsqu'une nouvelle tâche est créée?
   label_settings_default_mentions: Personnes mentionnées par défaut
   label_settings_display_watchers: Afficher l'utilisateur assigné au ticket
   label_settings_messenger_channel: Messenger - Nom du salon

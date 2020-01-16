@@ -30,6 +30,7 @@ class MessengerSettingsController < ApplicationController
                                     :post_updates,
                                     :new_include_description,
                                     :updated_include_description,
+                                    :post_new_issue,
                                     :post_private_issues,
                                     :post_private_notes,
                                     :post_wiki,
