@@ -22,6 +22,7 @@ ja:
   label_settings_auto_mentions: ユーザー名をその人についての投稿(@ユーザー名)に変換する
   label_settings_default_mentions: Default people for mentions
   label_settings_user_slack_id_field: SlackメンバーIDカスタムフィールド
+  label_settings_post_new_issue: 新しいタスクが作成されたときにユーザーに通知しますか？
   label_settings_display_watchers: ウォッチャーを表示する
   label_settings_messenger_channel: メッセンジャーのチャンネル
   label_settings_messenger_icon: メッセンジャーのアイコン

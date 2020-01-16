@@ -27,6 +27,7 @@ Redmine::Plugin.register :redmine_messenger do
     post_updates: '1',
     new_include_description: '1',
     updated_include_description: '1',
+    post_new_issue: '0',
     post_private_contacts: '0',
     post_private_db: '0',
     post_private_issues: '0',

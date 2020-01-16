@@ -22,6 +22,7 @@ en:
   label_settings_auto_mentions: Convert names to mentions?
   label_settings_default_mentions: Default people for mentions
   label_settings_user_slack_id_field: Slack member ID custom field
+  label_settings_post_new_issue: Notify user when a new task is created?
   label_settings_display_watchers: Display watchers?
   label_settings_messenger_channel: Messenger Channel
   label_settings_messenger_icon: Messenger Icon

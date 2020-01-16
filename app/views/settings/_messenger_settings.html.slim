@@ -42,6 +42,9 @@ fieldset#messenger_settings.box.tabular
     = content_tag(:label, l(:label_settings_display_watchers))
     = check_box_tag 'settings[display_watchers]', 1, @settings[:display_watchers].to_i == 1
   p
+    = content_tag(:label, l(:label_settings_post_new_issue))
+    = check_box_tag 'settings[post_new_issue]', 1, @settings[:post_new_issue].to_i == 1
+  p
     = content_tag(:label, l(:label_settings_post_updates))
     = check_box_tag 'settings[post_updates]', 1, @settings[:post_updates].to_i == 1
   p
