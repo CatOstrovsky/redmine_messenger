@@ -25,6 +25,7 @@ class MessengerSettingsController < ApplicationController
                                     :messenger_username,
                                     :messenger_verify_ssl,
                                     :auto_mentions,
+                                    :user_slack_id_field,
                                     :default_mentions,
                                     :display_watchers,
                                     :post_updates,

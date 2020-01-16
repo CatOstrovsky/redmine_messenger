@@ -21,6 +21,7 @@ Redmine::Plugin.register :redmine_messenger do
     messenger_username: 'robot',
     messenger_verify_ssl: '1',
     auto_mentions: '0',
+    user_slack_id_field: '-1',
     default_mentions: '',
     display_watchers: '0',
     post_updates: '1',

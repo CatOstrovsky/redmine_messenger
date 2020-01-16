@@ -21,6 +21,7 @@ de:
   label_messenger: Messenger
   label_settings_auto_mentions: Namen für Mentions konvertiert?
   label_settings_default_mentions: Standardbenutzer für Mentions
+  label_settings_user_slack_id_field: Benutzerdefiniertes Feld für die lockere Mitglieds-ID
   label_settings_display_watchers: Beobachter?
   label_settings_messenger_channel: Messenger Channel
   label_settings_messenger_icon: Messenger Icon

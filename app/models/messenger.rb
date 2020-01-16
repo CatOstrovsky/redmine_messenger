@@ -194,7 +194,15 @@ class Messenger
       when 'category'
         value = object_field_value(IssueCategory, detail.value)
       when 'assigned_to'
-        value = object_field_value(User, detail.value)
+        if detail.value.nil? || RedmineMessenger.settings[:user_slack_id_field] == '-1'
+          value = object_field_value(User, detail.value)
+        else
+          escape = false
+          value = "<@#{User.find_by(id: detail.value).custom_field_value(RedmineMessenger.settings[:user_slack_id_field])}>"
+        end
+
+        value = object_field_value(User, detail.value) if value == "<@>"
+
       when 'fixed_version'
         value = object_field_value(Version, detail.value)
       when 'attachment'

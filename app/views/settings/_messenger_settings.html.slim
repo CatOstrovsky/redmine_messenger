@@ -1,4 +1,7 @@
 .info = t(:messenger_settings_intro)
+- custom_fields = CustomField.where(:type => 'UserCustomField ', :field_format => ['string'])
+- custom_fields = custom_fields.collect{|c| [c.name, c.id]}
+- custom_fields = [['None', '-1']].concat custom_fields
 br
 
 fieldset#messenger_settings.box.tabular
@@ -28,6 +31,9 @@ fieldset#messenger_settings.box.tabular
   p
     = content_tag(:label, l(:label_settings_auto_mentions))
     = check_box_tag 'settings[auto_mentions]', 1, @settings[:auto_mentions].to_i == 1
+  p
+    = content_tag(:label, l(:label_settings_user_slack_id_field))
+    = select_tag 'settings[user_slack_id_field]', options_for_select(custom_fields, @settings[:user_slack_id_field]), :multiple => false
   p
     = content_tag(:label, l(:label_settings_default_mentions))
     = text_field_tag('settings[default_mentions]', @settings[:default_mentions], size: 30)
