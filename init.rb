@@ -31,6 +31,7 @@ Redmine::Plugin.register :redmine_messenger do
     post_private_issues: '0',
     post_private_notes: '0',
     post_actions: 'any',
+    fields_required_for_sending: '',
     post_wiki: '0',
     post_wiki_updates: '0',
     post_db: '0',

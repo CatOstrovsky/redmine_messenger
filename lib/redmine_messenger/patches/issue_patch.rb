@@ -105,6 +105,19 @@ module RedmineMessenger
                         short: true }
           end
 
+          if !RedmineMessenger.settings[:fields_required_for_sending].empty?
+            RedmineMessenger.settings[:fields_required_for_sending].each do |field|
+
+              title = I18n.t("field_"+field)
+
+              next if fields.any?{|a| a[:title] == title}
+
+              fields << { title: title,
+                        value: Messenger.markup_format(eval(field)),
+                        short: true }
+            end
+          end
+          
           attachment[:fields] = fields if fields.any?
 
           Messenger.speak(l(:label_messenger_issue_updated,

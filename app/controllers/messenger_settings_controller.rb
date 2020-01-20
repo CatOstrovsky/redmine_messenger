@@ -40,6 +40,7 @@ class MessengerSettingsController < ApplicationController
                                     :post_private_db,
                                     :post_contact,
                                     :post_contact_updates,
+                                    :fields_required_for_sending,
                                     :post_private_contacts,
                                     :post_password,
                                     :post_password_updates
